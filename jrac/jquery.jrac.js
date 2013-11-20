@@ -11,6 +11,8 @@
     var settings = {
       'crop_width': 200,
       'crop_height': 100,
+      'crop_min_width':700,
+      'crop_min_height':400,
       // The two following properties define the crop position (relative to the
       // image).
       'crop_x': 0,
@@ -167,6 +169,8 @@
           .css({
             'width': settings.crop_width,
             'height': settings.crop_height,
+            'minWidth':settings.crop_min_width,
+            'minHeight':settings.crop_min_height,
             'left':settings.crop_x+settings.viewport_content_left,
             'top':settings.crop_y+settings.viewport_content_top
           }).draggable({
